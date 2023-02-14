@@ -60,6 +60,13 @@ p {
     line-height: 1.2;
     color: #fff;
     text-transform: uppercase;
+
+    
+    @media screen and (min-width: 960px){
+      
+      font-size: 96px;
+    }
+
   }
 }
 
@@ -103,12 +110,13 @@ p {
   }
 }
 
-// .uk-container{
+.uk-container{
 
-//   @media screen and (min-width: 1600px){
+  @media screen and (max-width: 1500px){
     
-//   }
-// }
+    padding: 0 98px;
+  }
+}
 
 .uk-text-warning {
   color: #34000e !important;
@@ -164,6 +172,11 @@ header {
       padding: 280px 80px;
       background-color: #b70636;
 
+      @media screen and (max-width: 1500px){
+
+        padding: 140px 80px;
+      }
+
       .uk-offcanvas-close {
         top: 40px;
         right: 40px;
@@ -214,6 +227,24 @@ header {
   .dark.logo-name {
     h2 {
       color: #333;
+    }
+  }
+
+  @media screen and (max-width: 1500px){
+    
+    padding: 4vh 0;
+    height: 92vh;
+
+    .nav {
+      .logo-name{
+
+        width: 480px;
+        
+        h2 {
+          font-size: 26px;
+          letter-spacing: 0px;
+        }
+      }
     }
   }
 }
@@ -384,18 +415,20 @@ header {
 
   .calendar{
 
-    width: calc( 100% - $nav * 2);
+    // width: calc( 100% - $nav * 2);
     justify-content: center;
 
     .grid-body{
-      width: 25%;
+      width: 49%;
       padding: 0;
+      border-right: 1px solid #fff;
+      border-bottom: 1px solid #fff;
       
       .event-details{
         height: 400px;
         overflow: hidden;
-        border-right: 1px solid #fff;
-        border-bottom: 1px solid #fff;
+        border-left: 1px solid #fff;
+        border-top: 1px solid #fff;
         
         span{
 
@@ -490,15 +523,17 @@ header {
     grid-column: 1/7;
     grid-row: 1;
 
-    .uk-grid>* {
-      padding-left: 32px;
-    }
-
     .images{
       display: flex;
       flex-direction: column;
       row-gap: 32px;
       justify-content: center;
+
+      &:nth-child(2n){
+
+        padding-left: 32px;
+
+      }
 
       img{
 
@@ -524,6 +559,13 @@ header {
   
           font-size: 76px;
           color: #34000e;
+
+          
+          @media screen and (max-width: 1500px){
+            
+            font-size: 68px;
+          }
+
         }
       }
   
