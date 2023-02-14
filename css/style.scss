@@ -62,7 +62,7 @@ p {
     text-transform: uppercase;
 
     
-    @media screen and (min-width: 960px){
+    @media screen and (max-width: 1500px){
       
       font-size: 96px;
     }
@@ -169,12 +169,12 @@ header {
 
     .uk-offcanvas-bar {
       max-width: 75%;
-      padding: 280px 80px;
+      padding: 280px 64px;
       background-color: #b70636;
 
       @media screen and (max-width: 1500px){
 
-        padding: 140px 80px;
+        padding: 140px 64px;
       }
 
       .uk-offcanvas-close {
@@ -197,7 +197,7 @@ header {
 
       li{
 
-        margin-bottom: 40px;
+        margin-bottom: 32px;
 
         a{
 
@@ -354,10 +354,6 @@ header {
     line-height: 1.2;
   }
 
-  h3 {
-    margin: 0;
-    padding-left: 16px;
-  }
 }
 
 .programs{
@@ -371,7 +367,11 @@ header {
 
     .cardpadding{
       padding: 32px;
-      // margin: 0 16px;
+      height: 424px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  
       color: #34000e;
       background-color: #ffffff80;
       border: 1px solid transparent;
@@ -396,6 +396,12 @@ header {
 
         padding-top: 40px;
         padding-bottom: 20px;
+
+        li{
+
+          font-size: 18px;
+          list-style: inside;
+        }
         
       }
 
@@ -404,6 +410,14 @@ header {
         font-size: 56px;
         line-height: 1;
         font-weight: 700;
+        display: flex;
+        align-items: baseline;
+
+        p{
+          font-size: 16px;
+          margin-right: 8px;
+          font-weight: 700;
+        }
       }
 
     }
@@ -557,7 +571,7 @@ header {
   
         h2{
   
-          font-size: 76px;
+          font-size: 70px;
           color: #34000e;
 
           
@@ -723,6 +737,10 @@ footer{
               }
             }
           }
+        }
+
+        .cta_button {
+          padding-top: 1em;
         }
       }
     }

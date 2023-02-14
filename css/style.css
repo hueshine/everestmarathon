@@ -53,7 +53,7 @@ p {
   color: #fff;
   text-transform: uppercase;
 }
-@media screen and (min-width: 960px) {
+@media screen and (max-width: 1500px) {
   .headline h2 {
     font-size: 96px;
   }
@@ -139,12 +139,12 @@ header .nav .menu:hover .menu-line {
 }
 header .nav .uk-offcanvas-bar {
   max-width: 75%;
-  padding: 280px 80px;
+  padding: 280px 64px;
   background-color: #b70636;
 }
 @media screen and (max-width: 1500px) {
   header .nav .uk-offcanvas-bar {
-    padding: 140px 80px;
+    padding: 140px 64px;
   }
 }
 header .nav .uk-offcanvas-bar .uk-offcanvas-close {
@@ -158,7 +158,7 @@ header .nav .uk-offcanvas-bar .uk-close svg line {
   stroke: #fff !important;
 }
 header .nav .uk-offcanvas-bar li {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 header .nav .uk-offcanvas-bar li a {
   font-size: 32px;
@@ -280,10 +280,6 @@ header .dark.logo-name h2 {
   font-size: 48px;
   line-height: 1.2;
 }
-.intro h3 {
-  margin: 0;
-  padding-left: 16px;
-}
 
 .programs .card {
   margin-top: 40px;
@@ -293,6 +289,10 @@ header .dark.logo-name h2 {
 }
 .programs .card .cardpadding {
   padding: 32px;
+  height: 424px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   color: #34000e;
   background-color: rgba(255, 255, 255, 0.5019607843);
   border: 1px solid transparent;
@@ -315,9 +315,20 @@ header .dark.logo-name h2 {
   padding-top: 40px;
   padding-bottom: 20px;
 }
+.programs .card .cardpadding ul li {
+  font-size: 18px;
+  list-style: inside;
+}
 .programs .card .cardpadding .card_price {
   font-size: 56px;
   line-height: 1;
+  font-weight: 700;
+  display: flex;
+  align-items: baseline;
+}
+.programs .card .cardpadding .card_price p {
+  font-size: 16px;
+  margin-right: 8px;
   font-weight: 700;
 }
 
@@ -417,7 +428,7 @@ header .dark.logo-name h2 {
   text-align: right;
 }
 .glimpse .description .description_wrap .title h2 {
-  font-size: 76px;
+  font-size: 70px;
   color: #34000e;
 }
 @media screen and (max-width: 1500px) {
@@ -539,6 +550,9 @@ footer .footer_top .footer_grid .footer_side_column:last-child .contact_items .c
 }
 footer .footer_top .footer_grid .footer_side_column:last-child .contact_items .contact_item .socials_list .socials_listitem {
   margin-right: 16px;
+}
+footer .footer_top .footer_grid .footer_side_column:last-child .cta_button {
+  padding-top: 1em;
 }
 footer .footer_bottom {
   background-color: #120f10;
