@@ -314,7 +314,7 @@ header .dark.logo-name h2 {
   background-color: transparent;
 }
 .programs .card .cardpadding {
-  padding: 32px;
+  padding: 30px;
   height: 424px;
   display: flex;
   flex-direction: column;
@@ -333,17 +333,18 @@ header .dark.logo-name h2 {
   line-height: 1.2;
 }
 .programs .card .cardpadding .card_subtitle {
-  color: #b70636;
+  color: #333333;
   font-size: 22px;
   line-height: 1.6;
 }
 .programs .card .cardpadding ul {
   padding-top: 40px;
+  padding-left: 18px;
   padding-bottom: 20px;
 }
 .programs .card .cardpadding ul li {
   font-size: 18px;
-  list-style: inside;
+  list-style: disc;
 }
 .programs .card .cardpadding .card_price {
   font-size: 56px;
@@ -358,7 +359,7 @@ header .dark.logo-name h2 {
   font-weight: 700;
 }
 .programs .cta_button {
-  padding-top: 1em;
+  padding-top: 1.4em;
 }
 
 .glimpse .gallery {

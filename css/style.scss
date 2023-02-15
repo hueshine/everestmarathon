@@ -401,7 +401,7 @@ header {
     }
 
     .cardpadding{
-      padding: 32px;
+      padding: 30px;
       height: 424px;
       display: flex;
       flex-direction: column;
@@ -422,7 +422,7 @@ header {
       }
 
       .card_subtitle{
-        color: #b70636;
+        color: #333333;
         font-size: 22px;
         line-height: 1.6;
       }
@@ -430,12 +430,13 @@ header {
       ul{
 
         padding-top: 40px;
+        padding-left: 18px;
         padding-bottom: 20px;
 
         li{
 
           font-size: 18px;
-          list-style: inside;
+          list-style: disc;
         }
         
       }
@@ -459,7 +460,7 @@ header {
   }
 
   .cta_button {
-    padding-top: 1em;
+    padding-top: 1.4em;
   }
 }
 
