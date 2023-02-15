@@ -88,6 +88,11 @@ p {
 .cta_button{
   padding-top: 2em;
 
+  &.small{
+    max-width: 360px;
+    margin-left: calc(100% - 360px);
+  }
+
   .cta{
     border-radius: 40px;
     border: 1px solid #34000e;
@@ -452,6 +457,10 @@ header {
 
     }
   }
+
+  .cta_button {
+    padding-top: 1em;
+  }
 }
 
 .glimpse{
@@ -718,11 +727,6 @@ header {
         color: #34000e;
       }
     }
-  }
-
-  .cta_button {
-    max-width: 320px;
-    margin-left: calc(100% - 320px);
   }
 }
 

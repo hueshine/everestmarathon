@@ -72,6 +72,10 @@ p {
 .cta_button {
   padding-top: 2em;
 }
+.cta_button.small {
+  max-width: 360px;
+  margin-left: calc(100% - 360px);
+}
 .cta_button .cta {
   border-radius: 40px;
   border: 1px solid #34000e;
@@ -353,6 +357,9 @@ header .dark.logo-name h2 {
   margin-right: 8px;
   font-weight: 700;
 }
+.programs .cta_button {
+  padding-top: 1em;
+}
 
 .glimpse .gallery {
   display: grid;
@@ -520,10 +527,6 @@ header .dark.logo-name h2 {
 .news_updates .news .news_detail h4 {
   margin: 16px 0;
   color: #34000e;
-}
-.news_updates .cta_button {
-  max-width: 320px;
-  margin-left: calc(100% - 320px);
 }
 
 .partners {
