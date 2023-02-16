@@ -92,10 +92,10 @@ p {
   color: #fff;
 }
 
-a.after {
+.after {
   position: relative;
 }
-a.after::after {
+.after::after {
   background-color: rgba(255, 255, 255, 0.2509803922);
   bottom: -3px;
   content: "";
@@ -107,7 +107,7 @@ a.after::after {
   transition: transform 0.25s ease-out;
   width: 100%;
 }
-a.after:hover::after {
+.after:hover::after {
   transform: scaleX(0);
 }
 
@@ -276,6 +276,43 @@ header .dark.logo-name h2 {
 }
 #banner .dark#cta #cta-sec {
   color: #333;
+}
+
+.highlight {
+  background-color: #b70636;
+  text-align: center;
+}
+.highlight .headline {
+  padding-top: 48px;
+  padding-bottom: 24px;
+}
+.highlight .headline h2 {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: initial;
+  position: relative;
+  display: inline-block;
+}
+.highlight .headline h2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.6666666667);
+  left: 0;
+  bottom: -4px;
+  animation: after 1.6s infinite;
+}
+.highlight .orgs ul {
+  padding-top: 80px;
+  padding: 32px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.highlight .orgs ul li {
+  margin: 8px;
 }
 
 .intro .uk-grid:nth-child(2n) {
@@ -570,6 +607,11 @@ footer .footer_top {
   background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.5019607843) 0%, rgba(255, 255, 255, 0.5019607843) 39%, #120f10 39%, #120f10 100%);
   color: #ffffff;
 }
+@media screen and (max-width: 1600px) {
+  footer .footer_top {
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.5019607843) 0%, rgba(255, 255, 255, 0.5019607843) 36%, #120f10 36%, #120f10 100%);
+  }
+}
 footer .footer_top .footer_grid .footer_side_column {
   text-align: center;
 }
@@ -655,5 +697,22 @@ footer .footer_bottom .footer_bottom_items {
   }
   100% {
     opacity: 0;
+  }
+}
+@keyframes after {
+  0% {
+    opacity: 0;
+    width: 40%;
+    left: 30%;
+  }
+  50% {
+    opacity: 1;
+    width: 80%;
+    left: 10%;
+  }
+  100% {
+    opacity: 0;
+    width: 100%;
+    left: 0%;
   }
 }/*# sourceMappingURL=style.css.map */
