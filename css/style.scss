@@ -726,6 +726,15 @@ header {
       h4{
         margin: 16px 0;
         color: #34000e;
+        transition: 0.8s ease;
+      }
+    }
+
+    &:hover{
+
+      h4{
+
+        color: #ff1152;
       }
     }
   }
@@ -749,7 +758,7 @@ header {
       box-sizing: border-box;
       display: flex;
       justify-content: center;
-      padding: 32px 16px;
+      padding: 8px;
       width: 100%;
       transition: all .4s ease;
 
@@ -758,8 +767,8 @@ header {
       }
 
       .clients_image {
-        height: 120px;
-        width: 180px;
+        height: 180px;
+        width: 240px;
         object-fit: contain;
       }
     }
@@ -769,16 +778,14 @@ header {
 footer{
 
   .footer_top {
-    background-image: linear-gradient(90deg, #ffffff80 0%, #ffffff80 42%, #120f10 42%, #120f10 100%);
+    background-image: linear-gradient(90deg, #ffffff80 0%, #ffffff80 39%, #120f10 39%, #120f10 100%);
     color: #ffffff;
     
     .footer_grid {
 
-      display: flex;
-
       .footer_side_column {
         
-        padding: 80px 64px;
+        // padding: 80px 64px;
         text-align: center;
 
         .footer_logo{
@@ -796,13 +803,13 @@ footer{
         }
       }
 
-      .footer_side_column:first-child{
-          width: 33%;
+      .footer_side_column:nth-child(2n){
+
+        padding-left: 52px;
       }
 
-      .footer_side_column:last-child {
+      .footer_side_column.right {
         text-align: left;
-        width: 67%;
 
         .contact_items {
           display: flex;
@@ -811,17 +818,6 @@ footer{
 
           .contact_item {
             margin-bottom: 64px;
-            max-width: 320px;
-            
-            &:nth-child( 2n+1){
-
-              width: 320px;
-            }
-            
-            &:nth-child( 2n){
-
-              width: 280px;
-            }
 
             h4.contact_title{
 
